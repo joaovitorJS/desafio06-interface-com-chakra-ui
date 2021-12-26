@@ -1,5 +1,4 @@
 import { Flex, Text, Image } from "@chakra-ui/react";
-import { ReactElement } from "react";
 
 interface TravelTypeProps {
   name: string;
@@ -22,6 +21,7 @@ export function TravelType({name, src}: TravelTypeProps) {
       <Text
         fontWeight="semibold"
         fontSize={24}
+        textAlign="center"
       >
         {name}
       </Text>

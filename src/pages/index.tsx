@@ -1,9 +1,12 @@
-import { Flex, Box, Text } from "@chakra-ui/react";
 import { GetStaticProps } from "next";
+
+import { Flex, Box, Text } from "@chakra-ui/react";
+
 import { Banner } from "../components/Banner";
 import { Header } from "../components/Header";
 import { Slider } from "../components/Slider";
 import { Travel } from "../components/Travel";
+
 import { api } from "../services/api";
 
 export interface ContinentProps {
@@ -18,7 +21,7 @@ interface HomeProps {
   continents: ContinentProps[];
 }
 
-export default function Home({ continents }:HomeProps) {
+export default function Home({ continents }: HomeProps) {
   
   return (
     <>
@@ -29,7 +32,10 @@ export default function Home({ continents }:HomeProps) {
         flexDirection="column"
         maxW={1440}
         mx="auto"
-        pt="24"
+        pt={{
+          base: "14", 
+          md: "24"
+        }}
         pb="24"
       >
         <Travel />
@@ -45,15 +51,28 @@ export default function Home({ continents }:HomeProps) {
         <Text 
           textAlign="center"
           fontWeight="medium"
-          fontSize="36" 
-          mt="52px"
-          mb="52px"
+          fontSize={{
+            base: "32", 
+            sm: "34", 
+            md: "36"
+          }}
+          my={{
+            base: "6", 
+            md: "52px"
+          }}
+          padding="6"
         >
           Vamos nessa? <br /> Então escolha seu continente
         </Text>
 
         <Box
-          mx="24"
+          mx={{
+            base: '0',
+            sm: '24px',
+            md: '50px',
+            lg: '50px',
+            xl: '100px'
+          }}
         >
           <Slider data={continents}/>
         </Box>

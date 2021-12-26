@@ -10,8 +10,11 @@ export function Travel() {
       w="100%"
       rowGap="30px"
       minChildWidth="150px"
-      px={140}
-    
+      px={{
+        base: 50,  
+        lg: 100, 
+        xl: 140
+      }}
     >
       <TravelType name="vida noturna" src="/images/cocktail.svg"/>
       <TravelType name="praia" src="/images/surf.svg"/>

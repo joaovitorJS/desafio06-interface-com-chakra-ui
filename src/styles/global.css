@@ -22,3 +22,24 @@
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #FFBA08 !important;
 }
+
+.swiper {
+  height: 28rem;
+}
+
+@media screen and (max-width: 640px) {
+  .swiper {
+    height: auto !important;
+  }
+
+  .swiper-button-next::after {
+    font-size: 1.5rem !important; 
+    margin-right: 0rem;
+  }
+  
+  
+  .swiper-button-prev::after {
+    font-size: 1.5rem !important; 
+    margin-left: 0rem;
+  }
+}
