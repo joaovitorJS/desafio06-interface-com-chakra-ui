@@ -1,0 +1,112 @@
+{
+  "continents": [
+    {
+      "id": 1,
+      "slug": "europe",
+      "name": "Europa",
+      "slogan": "O continente mais antigo.",
+      "description": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
+      "thumb": "https://images.unsplash.com/photo-1491557345352-5929e343eb89?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "more_information": {
+        "countries_number": 50,
+        "languages_number": 60,
+        "most_visited_cities_number": 31,
+        "most_visited_cities": [
+          {
+            "id": 1,
+            "name": "Londres",
+            "country": "Reino Unido",
+            "thumb": "https://images.unsplash.com/photo-1587726480710-003743795e40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bG9uZG9ufGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+            "flag": "https://flagcdn.com/w320/gb.png"
+          },
+          {
+            "id": 2,
+            "name": "Paris",
+            "country": "França",
+            "thumb": "https://images.unsplash.com/photo-1584266337361-679ae80c8519?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fGZyYW5jZXxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60",
+            "flag": "https://flagcdn.com/w320/fr.png"
+          },
+          {
+            "id": 3,
+            "name": "Roma",
+            "country": "Itália",
+            "thumb": "https://images.unsplash.com/photo-1575487283542-d1fd6f1b3d6c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHJvbWV8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+            "flag": "https://flagcdn.com/w320/it.png"
+          },
+          {
+            "id": 4,
+            "name": "Praga",
+            "country": "República Tcheca",
+            "thumb": "https://images.unsplash.com/photo-1562624475-96c2bc08fab9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJhZ2F8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+            "flag": "https://flagcdn.com/w320/cz.png"
+          },
+          {
+            "id": 5,
+            "name": "Amsterdã",
+            "country": "Holanda",
+            "thumb": "https://images.unsplash.com/photo-1596304601957-e0b3aca66ce4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fGFtc3RlcmRhbXxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60",
+            "flag": "https://flagcdn.com/w320/nl.png"
+          }
+        ]
+      }
+    },
+
+    {
+      "id": 2,
+      "name": "Ásia",
+      "slug": "asia",
+      "slogan": "O maior continente do mundo.",
+      "description": "A Ásia é o maior continente em área terrestre do mundo, estando boa parte do continente localizado no Hemisfério Norte. Além de ser o mais extenso, é também o mais populoso, habitando nele cerca de três quintos da população mundial. A Ásia é multicultural, abrigando diversas culturas, etnias, religiões e tradições.",
+      "thumb": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "more_information": {
+        "countries_number": 49,
+        "languages_number": 51,
+        "most_visited_cities_number": 43,
+        "most_visited_cities": null
+      }
+    },
+
+    {
+      "id": 3,
+      "name": "América do Norte",
+      "slug": "north-america",
+      "slogan": "Conhecida por América Anglo-Saxônica ou América desenvolvida",
+      "description": "A América do Norte está localizada no extremo norte das Américas e é composta por apenas três países: Estados Unidos, Canadá e México, além de territórios de domínios europeus, como a Groelândia (pertencente ao Reino da Dinamarca, com representação no parlamento) e Bermudas (dependência britânica). Os dois primeiros países são os únicos do continente americano que estão inseridos no grupo dos países mais importantes político e economicamente, especialmente os Estados Unidos, que possuem a condição de maior potência mundial; já o México configura-se como um país em desenvolvimento, ou seja, emergente.",
+      "thumb": "https://images.unsplash.com/photo-1551042863-dbb4938b111f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
+      "more_information": {
+        "countries_number": 4,
+        "languages_number": 4,
+        "most_visited_cities_number": 10,
+        "most_visited_cities": null
+      }
+    },
+    {
+      "id": 4,
+      "name": "América do Sul",
+      "slug": "south-america",
+      "slogan": "Florestas tropicais",
+      "description": "A América do Sul é um continente que compreende a porção meridional da América. abrangendo 12% da superfície terrestre e 6% da população mundial. Possui vastos recursos naturais e graves problemas econômicos e sociais. A indústria está concentrada no beneficiamento de produtos agrícolas e na produção de bens de consumo, com destaque para a indústria automobilística.",
+      "thumb": "https://images.unsplash.com/photo-1619546952812-520e98064a52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80",
+      "more_information": {
+        "countries_number": 12,
+        "languages_number": 12,
+        "most_visited_cities_number": 3,
+        "most_visited_cities": null
+      }
+    },
+    {
+      "id": 5,
+      "name": "África",
+      "slug": "africa",
+      "slogan": "Terceiro continente mais extenso",
+      "description": "A África é o terceiro continente mais extenso (depois da Ásia e da América) com cerca de 30 milhões de quilômetros quadrados, cobrindo 20,3% da área total da terra firme do planeta. É o segundo continente mais populoso da Terra (atrás da Ásia) com cerca de um bilhão de pessoas (estimativa para 2005), representando cerca de um sétimo da população mundial, e 54 países independentes. Tem se transformado na ultima década em uma continente cada vez mais católico.",
+      "thumb": "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
+      "more_information": {
+        "countries_number": 54,
+        "languages_number": 56,
+        "most_visited_cities_number": 10,
+        "most_visited_cities": null
+      }
+    }
+  ]
+}
