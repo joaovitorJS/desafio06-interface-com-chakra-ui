@@ -12,6 +12,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import styles from "./styles.module.css";
+import { DarkenedImage } from '../DarkenedImage';
 
 
 interface SliderProps {
@@ -40,33 +41,15 @@ export function Slider ({ data }: SliderProps) {
             className={styles.sliderItem}
             key={item.id}
           >
-            <Flex
-              width="100%"
-              height="100%"
-              zIndex={10}
-              display="inline-block"
-              position="relative"
-              _after={{
-                content: `" "`,
-                position: "absolute",
-                top: "0",
-                right: "0",
-                backgroundColor: "rgba(28, 20, 1, 0.35)",
-                width: "100%",
-                height: "100%"
-              }}
-              overflow='hidden'
-            >
+            <DarkenedImage>
               <Image 
                 src={item.thumb}
                 width="100%"
                 height="100%"
-                objectFit="cover"
-                objectPosition="center"
-                
-              />  
-
-            </Flex>
+                objectFit="fill"
+                objectPosition="center" 
+              /> 
+            </DarkenedImage>
             <Flex
               position="absolute"
               width="100%"
