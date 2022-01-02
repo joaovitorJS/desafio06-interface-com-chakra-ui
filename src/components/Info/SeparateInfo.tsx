@@ -20,19 +20,19 @@ interface SeparateInfoProps {
 
 export function SeparateInfo ({children, information, hasButtonInfo=false}: SeparateInfoProps) {
   return (
-    <Flex direction="column" align="center">
-        <Text fontWeight="semibold" color="highlight" fontSize="48px" as="span">
+    <Flex direction="column" align={["flex-start","center"]}>
+        <Text fontWeight="semibold" color="highlight" fontSize={["2xl","5xl"]} as="span">
           {children}
         </Text>
         
-      <Flex align="center" position="relative"> 
-        <Text fontWeight="semibold" color="gray.500" fontSize="24px" mr="5px">
+      <Flex align="center" position={{base: "static", md: "relative"}}> 
+        <Text fontWeight={["regular", "semibold"]} color="gray.500" fontSize={["md","2xl"]} mr="5px">
           {information}
         </Text>
         { hasButtonInfo &&
-          <Popover>
+          <Popover strategy="fixed">
             <PopoverTrigger>
-              <Icon as={FiInfo} h="4" w="4" color="gray.500" cursor="pointer" opacity="50%"/>
+              <Icon as={FiInfo} h={["2.5","4"]} w={["2.5","4"]} color="gray.500" cursor="pointer" opacity="50%"/>
             </PopoverTrigger>
             <PopoverContent>
               <PopoverArrow />

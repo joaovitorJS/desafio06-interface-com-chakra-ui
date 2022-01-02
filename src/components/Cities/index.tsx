@@ -20,7 +20,12 @@ interface CitiesProps {
 
 export function Cities({ cities }: CitiesProps) {
   return (
-    <Grid templateColumns="repeat(auto-fill, 256px)" gap={45} mt="10">
+    <Grid 
+      templateColumns="repeat(auto-fill, 256px)" 
+      gap={{base: "20px", md: 45}} 
+      mt={["6","10"]} 
+      justifyContent="center"
+    >
       {cities.map(city => (
         <Flex
           border="1px solid rgba(255, 186, 8, 0.5)"
@@ -32,13 +37,13 @@ export function Cities({ cities }: CitiesProps) {
           <Image
             src={city.thumb}
             alt={city.name}
-            h={{base: "44"}}
+            h="44"
             w="100%"
             objectFit="fill"
             borderTopRadius="4"
           />
 
-          <Flex align="center" justifyContent="space-between" px="6" mt={{base: "5"}} mb={{base: "6"}}>
+          <Flex align="center" justifyContent="space-between" px="6" mt="5" mb="6">
             <Stack>
               <Text
                 fontFamily="Barlow"

@@ -31,7 +31,7 @@ export function Header({isBackButton = false}: HeaderProps) {
           w="8"
           h="8" 
           position="absolute"
-          left="140px"
+          left={{base: "4", md:"24", lg: "140px"}}
           cursor="pointer"
           onClick={handleBackToHome}
         />

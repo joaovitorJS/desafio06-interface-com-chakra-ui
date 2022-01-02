@@ -14,7 +14,7 @@ export function Info({
 }: InfoProps) {
   return (
     <Flex alignItems="center" justify="center">
-      <HStack spacing={42}>
+      <HStack spacing={["20px", 42]}>
         <SeparateInfo information="países">{countries_number}</SeparateInfo>
         <SeparateInfo information="línguas">{languages_number}</SeparateInfo>
         <SeparateInfo information="cidades +100" hasButtonInfo={true} >{most_visited_cities_number}</SeparateInfo>

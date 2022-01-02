@@ -1,4 +1,4 @@
-import { Heading, Box, Text, Image, Flex, Grid, HStack } from '@chakra-ui/react';
+import { Box, Text, Image, Flex, Grid, useBreakpointValue } from '@chakra-ui/react';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { Cities } from '../components/Cities';
 import { DarkenedImage } from '../components/DarkenedImage';
@@ -31,14 +31,21 @@ interface ContinentProps {
 }
 
 export default function Continent ({ continent }: ContinentProps) {
-  
+  const isWideVersion = useBreakpointValue({
+    base: false,
+    md: true,
+  });
+
+
   return (
     <>
       <Header isBackButton/>
-      <Box 
+      <Flex 
         as="header"
-        h={{base: "500px"}}
+        h={{base: "250px", md: "500px"}}
         position="relative"
+        justify="center"
+        align="center"
       >
         <DarkenedImage>
           <Image
@@ -54,23 +61,23 @@ export default function Continent ({ continent }: ContinentProps) {
 
         <Text 
           as="h1"
-          fontSize="48px"
+          fontSize={["32px","48px"]}
           color="gray.50"
           fontWeight="semibold"
           position="absolute"
-          left="140px"
-          bottom="60px"
+          left={{base: "auto", lg: "140px"}}
+          bottom={{base: "auto", lg: "60px"}}
           zIndex={11}
         >
           {continent.name}
         </Text>
-      </Box>
+      </Flex>
       
-      <Box as="main" mx="140px">
-        <Grid templateColumns="repeat(2, 1fr)" gap={70} mt="20"> 
+      <Box as="main" mx={["4", "4", "12", "140px"]}>
+        <Grid templateColumns={{base: "1fr", xl: "repeat(2, 1fr)"}} gap={["4", 70]} mt={["6", "20"]}> 
           <Text
-            fontSize="24"
-            lineHeight="36px"
+            fontSize={["14", "24"]}
+            lineHeight={["21px", "36px"]}
             align="justify"
           >
             {continent.description}
@@ -82,13 +89,13 @@ export default function Continent ({ continent }: ContinentProps) {
           />
         </Grid>
 
-        <Box as="section" my="20" >
+        <Box as="section" my={{base: "8", md: "12", lg: "20"}} >
           { continent.more_information.most_visited_cities &&
             <>
               <Text 
                 as="h2"
                 fontWeight="medium"
-                fontSize="4xl"
+                fontSize={["2xl","4xl"]}
               >
                 Cidades +100
               </Text>
