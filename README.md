@@ -46,7 +46,7 @@
 
 ## 💻 Sobre o projeto
 
-O **Worldtrip** é uma aplicação que, teve como objetivo ser  criada usando apenas o Charka UI e ser responsiva.
+O **Worldtrip** é uma aplicação que, teve como objetivo ser  criada usando apenas o Chakra UI e deixá-la responsiva.
 
 ##### Desafio - Criando um projeto do zero do   **Treinamento Ignite - Trilha ReactJS** oferecida pela [Rocketseat](https://rocketseat.com.br/).
 
