@@ -8,13 +8,13 @@
 
 <p align="center">
   <a>
-    <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/joaovitorJS/desafio05-criando-projeto-do-zero">
+    <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/joaovitorJS/desafio06-interface-com-chakra-ui">
   </a>  
   <a>
-    <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/joaovitorJS/desafio05-criando-projeto-do-zero">
+    <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/joaovitorJS/desafio06-interface-com-chakra-ui">
   </a>
   <a>
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/joaovitorJS/desafio05-criando-projeto-do-zero">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/joaovitorJS/desafio06-interface-com-chakra-ui">
   </a>
   <a href="https://lbesson.mit-license.org/"        target="_blank>
     <img alt="MIT license" src="https://img.shields.io/badge/License-MIT-blue.svg">
@@ -32,7 +32,7 @@
 </p>
 
 <h2 align="center"> 
- <strong>Spacetraveling</strong> | Complete 🚀 
+ <strong>Worldtrip</strong> | Complete 🚀 
 </h2>
 
 <p align="center">
@@ -46,7 +46,7 @@
 
 ## 💻 Sobre o projeto
 
-O **Spacetraveling** é uma aplicação que tem como objetivos trazer post usando o Prismic CMS como gerenciador de contúedo.
+O **Worldtrip** é uma aplicação que, teve como objetivo ser  criada usando apenas o Charka UI e ser responsiva.
 
 ##### Desafio - Criando um projeto do zero do   **Treinamento Ignite - Trilha ReactJS** oferecida pela [Rocketseat](https://rocketseat.com.br/).
 
@@ -63,8 +63,7 @@ O **Spacetraveling** é uma aplicação que tem como objetivos trazer post usand
 </p>
  <br>
 <p align="center">
-  <img src="./.github/home.png" alt="Layout Inicial" width="49%" height="260px"/>
-  <img src="./.github/post.png" alt="Laout da página de Post" width="49%" height="260px"/>
+  <img src="./.github/home.png" alt="Layout Inicial" width="100%"/>
 </p>
 
 
@@ -83,16 +82,17 @@ Para executar esta aplicação, você deverá ter instalado em sua máquina as s
 
 ```bash
 # Clone este repositório -> usando SSH
-$ git clone git@github.com:joaovitorJS/desafio05-criando-projeto-do-zero.git
+$ git clone git@github.com:joaovitorJS/desafio06-interface-com-chakra-ui.git
 
 # Acesse a pasta do projeto no seu terminal
-$ cd desafio05-criando-projeto-do-zero
+$ cd desafio06-interface-com-chakra-ui
 
 ## Passos com yarn
 # Instale as dependências
-$ yarn install
+$ yarn 
 
-# Antes de executar o 'yarn dev' é importante configurar o arquivo .env.local
+# Antes de executar o 'yarn dev' é importante executar o json-server
+$ json-server db.json -p 3333
 
 # Execute a aplicação em modo de desenvolvimento
 $ yarn dev
@@ -106,93 +106,13 @@ $ npm run dev
 
 # O servidor web inciará na porta:3000 - 
 # acesse http://localhost:3000 em seu navegador para ver a aplicação funcionando
+# O servidor json-server inciará na porta:3333
 ```
 
-* Configurando o arquivo *.env.local*:
-  *  Logo após tem feito o *git clone*, na raiz do projeto terá um arquivo chamado *.env.example*. Renomeie trocando por  *.env.local*.
-
-  * Para ter essa váriavel ambiente, crie uma conta no Prismic CMS
-  * Depois crie um repository com o nome que preferir
-
-  * Em **Custom Types** (dentro do repository):
-  Crie um **Repeatable Type** com o nome de '*Posts*'
-
-  * No **JSON editor** ao lado de **Build mode** cole seguinte JSON:
- 
-* <details>
-    <summary>JSON editor</summary>
- 
-    ```json
-    {
-    "Main" : {
-      "uid" : {
-        "type" : "UID",
-        "config" : {
-          "label" : "slug"
-        }
-      },
-      "title" : {
-        "type" : "Text",
-        "config" : {
-          "label" : "title"
-        }
-      },
-      "subtitle" : {
-        "type" : "Text",
-        "config" : {
-          "label" : "subtitle"
-        }
-      },
-      "author" : {
-        "type" : "Text",
-        "config" : {
-          "label" : "author"
-        }
-      },
-      "banner" : {
-        "type" : "Image",
-        "config" : {
-          "constraint" : { },
-          "thumbnails" : [ ],
-          "label" : "banner"
-        }
-      },
-      "content" : {
-        "type" : "Group",
-        "config" : {
-          "fields" : {
-            "heading" : {
-              "type" : "Text",
-              "config" : {
-                "label" : "heading"
-              }
-            },
-            "body" : {
-              "type" : "StructuredText",
-              "config" : {
-                "multi" : "paragraph,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
-                "allowTargetBlank" : true,
-                "label" : "body"
-              }
-            }
-          },
-          "label" : "content"
-        }
-      }
-    }
-  } 
-  ```
-  </details>
-
-* Após ter feito esses passos, crie documentos (em 'Documents') para testar
-
-* Pegando a PRISMIC_API_ENDPOINT:
-  * Em **Settings**, vai em **API & Security**
-  * Copie o endereço que está em **API endpoint**
-  * Cole o endereço copiado no arquivo *.env.local*
-  * Ficando, por exemplo: PRISMIC_API_ENDPOINT=https://nomedorepository.prismic.io/api/v2
-  
-* Feito todos esses passos é só executar a aplicação.
+* Instalando o json-server de forma global:
+```bash
+  $ yarn add -g json-server 
+``` 
 ---
 
 ## 🛠 Tecnologias
@@ -200,9 +120,9 @@ $ npm run dev
 * **[TypeScript](https://www.typescriptlang.org/)**
 * **[ReactJS](https://pt-br.reactjs.org/)**
 * **[NextJS](https://nextjs.org/)**
-* **[Sass](https://sass-lang.com/install)**
-* **[Prismic](https://prismic.io/docs)**
-* **[Utterances](https://utteranc.es/)**
+* **[ChakraUI](https://chakra-ui.com/)**
+* **[Json-Server](https://github.com/typicode/json-server#getting-started)**
+* **[SwiperJS](https://swiperjs.com/react)**
 
 
 
